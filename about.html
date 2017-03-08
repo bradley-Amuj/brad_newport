@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta name = "viweport" content="width=device-width initial-scale=1.0">
+	<script src = "jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			setTimeout(function(){
+				$(".intro").removeClass("unseen");
+			},500);
+			setTimeout(function(){
+				$(".show").removeClass("unshow");
+			},3300);
+			setTimeout(function(){
+				$(".html").removeClass("hl");
+			},4000);
+			setTimeout(function(){
+				$(".css").removeClass("cl");
+			},5500);
+			setTimeout(function(){
+				$(".jquery").removeClass("ql");
+			},7000);
+			setTimeout(function(){
+				$(".php").removeClass("pl");
+			},8500);
+			setTimeout(function(){
+				$(".javaScript").removeClass("jsl");
+			},10000);
+			setTimeout(function(){
+				$(".python").removeClass("pyl");
+			},10900);
+			setTimeout(function(){
+				$(".java").removeClass("jl");
+			},12000);
+			setTimeout(function(){
+				$(".nav").removeClass("hidden3");
+			},13200);
+			setTimeout(function(){
+				alert("Need a website.Just contact me")
+			},15200);
+
+		});
+	</script>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body,html{
+			background-color: black
+		}
+		.intro  {
+			color: white;
+			font-size: 40px;
+			position: relative;
+			top: 20px;
+			text-align: center;
+			font-family: monospace;
+			text-shadow: 0 0 0.1em white, 0 0 0.2em black,0 0 0.3em black,0 0 0.4em white;
+
+		}
+		.intro li{
+			display: inline-block;
+		}
+		.nav.hidden3 {
+			opacity:0
+		}
+		.nav{
+			opacity:1;
+			transition: all 5s ease;
+		}
+		img{
+			position: relative;
+			width: 80px;
+			height: 80px;
+			top:150px;
+			left:450px;
+			background-color: white;
+			border:none;
+			margin-right: 55px;
+		}
+		img:hover{
+			opacity: 0.5;
+		}
+		.intro.unseen li:nth-child(1){transform: translateX(50px)translateY(200px);}
+		.intro.unseen li:nth-child(3){transform: translateX(70px)translateY(400px);}
+		.intro.unseen li:nth-child(4){transform: translateX(20px)translateY(100px);}
+		.intro.unseen li:nth-child(6){transform: translateX(100px)translateY(350px);}
+		.intro.unseen li:nth-child(7){transform: translateX(350px)translateY(400px);}
+		.intro.unseen li:nth-child(9){transform: translateX(90px)translateY(450px);}
+		.intro.unseen li:nth-child(10){transform: translateX(10px)translateY(400px);}
+		.intro.unseen li:nth-child(11){transform: translateX(1px)translateY(90px);}
+		.intro.unseen li:nth-child(12){transform: translateX(120px)translateY(10px);}
+		.intro.unseen li:nth-child(13){transform: translateX(150px)translateY(150px);}
+		.intro.unseen li:nth-child(14){transform: translateX(200px)translateY(10px);}
+		.intro.unseen li:nth-child(15){transform: translateX(50px)translateY(50px);}
+		.intro.unseen li:nth-child(16){transform: translateX(300px)translateY(300px);}
+		.intro.unseen li:nth-child(18){transform: translateX(400px)translateY(150px);}
+		.intro.unseen li:nth-child(19){transform: translateX(450px)translateY(90px);}
+		.intro.unseen li:nth-child(20){transform: translateX(90px)translateY(130px);}
+		.intro.unseen li:nth-child(21){transform: translateX(190px)translateY(180px);}
+		.intro.unseen li:nth-child(22){transform: translateX(210px)translateY(360px);}
+		.intro.unseen li:nth-child(23){transform: translateX(60px)translateY(40px);}
+		.intro.unseen li:nth-child(24){transform: translateX(120px)translateY(210px);}
+		.intro.unseen li:nth-child(25){transform: translateX(110px)translateY(120px);}
+		.intro.unseen li:nth-child(26){transform: translateX(150px)translateY(190px);}
+		.intro.unseen li{
+			opacity: 0;
+		}
+
+		.intro li{
+			transition: all 3.5s ease;
+			opacity: 1;
+			font-weight: 40px;
+		}
+		.show{
+			transition: all 2.5s ease;
+			opacity: 1;
+			color:white;
+			font-size: 30px;
+			position: relative;
+			top:30px;
+			font-family: Arial;
+			text-align: center;
+			text-shadow: 0 0 0.1em purple, 0 0 0.2em white,0 0 0.3em white,0 0 0.4em white;
+
+		}
+		.show.unshow{
+			opacity: 0;
+			
+		}
+		.html,.css,.jquery,.php,.javaScript,.python,.java{
+			margin-bottom: 4px;
+			opacity: 1;
+			position: relative;
+			top:40px;
+			text-align: center;
+			color: black;
+			font-size: 20px;
+			font-weight: 40px;
+			transition: all 4s ease;
+			font-family: lucida calligraphy;
+			text-shadow: 0 0 0.1em white, 0 0 0.2em white,0 0 0.3em white,0 0 0.4em white;
+
+		}
+		.html.hl,.css.cl,.jquery.ql,.php.pl,.javaScript.jsl,.python.pyl,.java.jl{
+			opacity:0;
+
+		}
+	</style>
+
+</head>
+<body>
+	<div class = "intro unseen">
+	<ul>
+		<li>I</li>
+		<li>  </li>
+		<li>A</li>
+		<li>M</li>
+		<li>  </li>
+		<li>A</li>
+		<li>N</li>
+		<li>  </li>
+		<li>U</li>
+		<li>P</li>
+		<li>C</li>
+		<li>O</li>
+		<li>M</li>
+		<li>I</li>
+		<li>N</li>
+		<li>G</li>
+		<li>  </li>
+		<li>D</li>
+		<li>E</li>
+		<li>V</li>
+		<li>E</li>
+		<li>L</li>
+		<li>O</li>
+		<li>P</li>
+		<li>E</li>
+		<li>R</li>
+	</ul>
+	</div>
+	<p class = "show unshow">Legible in the following Languages:</p>
+	<p class = "html hl">HTML5</p>
+	<p class = "css cl">CSS3</p>
+	<p class = "jquery ql">jquery</p>
+	<p class = "php pl">Php</p>
+	<p class = "javaScript jsl">javaScript</p>
+	<p class = "python pyl">Python</p>
+	<p class = "java jl">Java</p>
+	
+	<div class = "nav hidden3">
+		<a href="index.html"><img src="images/home.png"></a>
+		<a href="about.html"><img src="images/about.gif"></a>
+		<a href="message.html"><img src="images/message.png"></a>
+	</div>
+</body>
+</html>

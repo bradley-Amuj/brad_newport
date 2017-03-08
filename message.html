@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			setTimeout(function(){
+				$(".message").removeClass("hidden3");
+			},600);
+			setTimeout(function(){
+				$(".form").removeClass("hidden4");
+			},1500);
+			setTimeout(function(){
+				$(".nav").removeClass("hidden5");
+			},3000);
+		});
+	</script>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body,html{
+			background-color: black
+		}
+		form{
+			text-align: center;
+			width: 1200px;
+			position: relative;
+			top:100px;
+			left: 50px;
+		}
+		h1{
+			color: white;
+			text-align: center;
+			position: relative;
+			top:10px;
+			font-family: Arial;
+		}
+		label{
+			color: white;
+		}
+		img{
+			position: relative;
+			width: 80px;
+			height: 80px;
+			top:200px;
+			left:500px;
+			background-color: white;
+			border:none;
+			margin-right: 55px;
+		}
+		img:hover{
+			opacity: 0.5;
+		}
+		.message.hidden3{
+			opacity: 0
+		}
+		.message,.form,.nav{
+			opacity: 1;
+			transition: all 5s ease;
+		}
+		.form.hidden4,.nav.hidden5{
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+<h1 class = "message hidden3">MESSAGE FORM</h1>
+<form class = "form hidden4">
+	<label>Enter Name</label>
+	<input type="text" name="Firstname" placeholder="First Name" autocomplete="off">
+	<input type="text" name="Secondname" placeholder="Second Name" autocomplete="off">
+	<br><br>
+	<label>Enter Email Address</label>
+	<input type="email" name="email" placeholder="Email" autocomplete="off">
+	<br><br>
+	<label>Type your message here</label>
+	<br>
+	<textarea name = "message" rows="5" placeholder="Message">
+	</textarea>
+	<br><br>
+	<input type="submit" value="Send">
+</form>
+	<div class = "nav hidden5">
+		<a href="index.html"><img src="images/home.png"></a>
+		<a href="about.html"><img src="images/about.gif"></a>
+		<a href="message.html"><img src="images/message.png"></a>
+	</div>
+</body>
+</html>

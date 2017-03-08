@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brad</title>
+	<meta name = "viweport" content="width=device-width initial-scale=1.0">
+	<script src = "jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			setTimeout(function(){
+				$(".end").removeClass("hidden");
+			},500);
+			setTimeout(function(){
+				$("li").css("font-size","100px");
+			},500);
+			setTimeout(function(){
+				$("li").css("font-size","30px");
+			},2000);
+			setTimeout(function(){
+				$("li").css("font-size","50px");
+			},3000);
+			setTimeout(function(){
+				$(".heading").removeClass("hidden2");
+			},4000);
+			setTimeout(function(){
+				$(".nav").removeClass("hidden3");
+			},5500);
+		});
+	</script>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-color: black;
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			font-size: 70px;
+			font-weight: 40px;
+			color: white;
+		}
+		.heading{
+			font-family: monospace;
+			font-size: 50px;
+			position: absolute;
+			top: 20%;
+			left: 20%;
+
+		}
+		.heading.hidden2 li{
+			opacity: 0
+		}
+		.heading li{
+			text-shadow: 0 0 0.1em white, 0 0 0.2em black,0 0 0.3em black,0 0 0.4em white;
+			transition: all 3s ease;
+		}
+		.end.hidden li{
+			opacity: 0
+		}
+		.end{
+			position: absolute;
+			top: 30%;
+			left: 40%;
+			
+		}
+		.end li{
+			margin-right:4px;
+			text-shadow: 0 0 0.1em grey, 0 0 0.2em white,0 0 0.3em blue,0 0 0.4em green,0 0 0.5em white;
+			transition: all 3.5s ease; 
+			font-family: lucida calligraphy;
+		}
+		.end.hidden li:nth-child(1){transform: translateX(-150px)translateY(-300px);}
+		.end.hidden li:nth-child(2){transform: translateX(-100px)translateY(-200px);}
+		.end.hidden li:nth-child(3){transform: translateX(-50px)translateY(-300px);}
+		.end.hidden li:nth-child(4){transform: translateX(500px)translateY(200px);}
+		.end.hidden li:nth-child(5){transform: translateX(-500px)translateY(200px);}
+		.end.hidden li:nth-child(6){transform: translateX(400px)translateY(-300px);}
+		.end.hidden li:nth-child(7){transform: translateX(300px)translateY(-100px);}
+		img{
+			position: relative;
+			width: 80px;
+			height: 80px;
+			top:400px;
+			left:500px;
+			background-color: white;
+			border:none;
+			margin-right: 55px;
+		}
+		img:hover{
+			opacity: 0.5;
+		}
+		.nav.hidden3 {
+			opacity:0
+		}
+		.nav{
+			opacity:1;
+			transition: all 4s ease;
+		}
+	</style>
+
+</head>
+<body>
+	<div class = "end hidden">
+		<ul>
+			<li>B</li>
+			<li>R</li>
+			<li>A</li>
+			<li>D</li>
+			<li>L</li>
+			<li>E</li>
+			<li>Y</li>
+
+		</ul>
+	</div>
+	<div class = "heading hidden2">
+		<ul>
+			<li>Y</li>
+			<li>O</li>
+			<li>U</li>
+			<li>      </li>
+			<li>H</li>
+			<li>A</li>
+			<li>V</li>
+			<li>E</li>
+			<li>      </li>
+			<li>R</li>
+			<li>E</li>
+			<li>A</li>
+			<li>C</li>
+			<li>H</li>
+			<li>E</li>
+			<li>D</li>
+		</ul>
+	</div> 	
+
+	<div class = "nav hidden3">
+		<a href="index.html"><img src="images/home.png"></a>
+		<a href="about.html"><img src="images/about.gif"></a>
+		<a href="message.html"><img src="images/message.png"></a>
+	</div>
+</body>
+</html>
